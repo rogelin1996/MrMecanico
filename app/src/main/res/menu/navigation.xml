@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_perfil"
+        android:icon="@drawable/person"
+        android:title="Perfil"/>
+
+    <item
+        android:id="@+id/navigation_paquetes"
+        android:icon="@drawable/style"
+        android:title="Paquetes"/>
+
+    <item
+        android:id="@+id/navigation_talleres"
+        android:icon="@drawable/place"
+        android:title="Talleres"/>
+
+    <item
+        android:id="@+id/navigation_citas"
+        android:icon="@drawable/check"
+        android:title="Citas"/>
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/notification"
+        android:title="Notificaciones"/>
+
+</menu>

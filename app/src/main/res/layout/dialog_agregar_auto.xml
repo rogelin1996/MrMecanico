@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/string_agregar_auto"
+            android:textStyle="bold"
+            android:paddingLeft="8dp"
+            android:theme="@style/TextPrimaryLg" />
+
+        <ImageButton
+            android:id="@+id/ibCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:background="@color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/ic_close" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etPlaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/string_placa"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/colorSecondaryText"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+    <TextView
+        style="@style/TextSecondaryMd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:text="@string/string_marca" />
+
+    <Spinner
+        android:id="@+id/spMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/colorSecondaryText"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+    <TextView
+        style="@style/TextSecondaryMd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:text="@string/string_modelo" />
+
+    <Spinner
+        android:id="@+id/spModelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorSecondaryText"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+    <TextView
+        style="@style/TextSecondaryMd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:text="@string/string_anio" />
+
+    <Spinner
+        android:id="@+id/spAnio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorSecondaryText"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+    <TextView
+        style="@style/TextSecondaryMd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:text="@string/string_kilometraje" />
+
+    <Spinner
+        android:id="@+id/spKilometraje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorSecondaryText"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_register"
+        android:elevation="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingLeft="44dp"
+        android:paddingRight="44dp"
+        android:text="@string/string_agregar" />
+
+</LinearLayout>

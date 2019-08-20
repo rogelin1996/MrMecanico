@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "603872251222",
+    "firebase_url": "https://talleres-9c441.firebaseio.com",
+    "project_id": "talleres-9c441",
+    "storage_bucket": "talleres-9c441.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603872251222:android:b13b3932093ad634",
+        "android_client_info": {
+          "package_name": "mx.avidos.mrmecanicoch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603872251222-1m9ks95js30scdujf4ck5blin8ir2l77.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mx.avidos.mrmecanicoch",
+            "certificate_hash": "f157cbee86762e08fa700a2adb2c357239034ec7"
+          }
+        },
+        {
+          "client_id": "603872251222-gg3ck7iih3npotibjafn5694rahsvorv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8umTtuE8NU8M6-HvSDjmexOpHijs8G5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603872251222-gg3ck7iih3npotibjafn5694rahsvorv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
