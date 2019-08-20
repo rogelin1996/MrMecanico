@@ -27,7 +27,6 @@ public class PaqueteDetail extends BaseActivity {
     TextView tvNombre, tvPrecio, tvDescripcion;
     Button btnAgendar;
     BottomSheetDialog bottomSheetDialog;
-    String variable = "100";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
