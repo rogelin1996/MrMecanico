@@ -2,6 +2,7 @@ package mx.avidos.mrmecanicoch.Entidad;
 
 public class Cita {
 
+    private String uidCita;
     private String automovil;
     private long fecha;
     private int status;
@@ -18,6 +19,14 @@ public class Cita {
         this.talleruid = talleruid;
         this.uidPaquete = uidPaquete;
         this.uidUsuario = uidUsuario;
+    }
+
+    public String getUidCita() {
+        return uidCita;
+    }
+
+    public void setUidCita(String uidCita) {
+        this.uidCita = uidCita;
     }
 
     public String getAutomovil() {

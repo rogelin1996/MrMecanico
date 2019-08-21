@@ -64,11 +64,13 @@ public class BaseActivity extends AppCompatActivity {
     public String uidTaller;
     public String uidAutomovil;
     public String uidPaquete;
+    public String uidCita;
     public String nombrePaquete;
     public String desCorta;
     public String desLarga;
     public String urlPaquete;
     public String precioPaquete;
+    public long FechaHora;
 
     public String nombre, correoElectronico, telefono, contrasena, placa, marca, modelo, anio, kilometraje;
 

@@ -77,9 +77,6 @@ public class EditarPerfil extends BaseActivity implements View.OnClickListener {
         getSupportActionBar().setDisplayShowTitleEnabled(true);
         getSupportActionBar().setTitle(titulo);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        /*final Drawable upArrow = getResources().getDrawable(R.drawable.ic_add);
-        upArrow.setColorFilter(Color.parseColor("#FFFFFF"), PorterDuff.Mode.SRC_ATOP);
-        getSupportActionBar().setHomeAsUpIndicator(upArrow);*/
     }
 
     private void showInfo (){

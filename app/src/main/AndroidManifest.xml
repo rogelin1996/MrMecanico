@@ -53,7 +53,8 @@
 
         <activity android:name=".AgendarActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".EditarPerfil"></activity>
+        <activity android:name=".EditarPerfil" />
+        <activity android:name=".CitaDetail"></activity>
     </application>
 
 </manifest>

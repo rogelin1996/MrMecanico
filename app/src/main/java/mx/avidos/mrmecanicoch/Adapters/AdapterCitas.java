@@ -1,6 +1,7 @@
 package mx.avidos.mrmecanicoch.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -21,6 +22,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+import mx.avidos.mrmecanicoch.CitaDetail;
 import mx.avidos.mrmecanicoch.Entidad.Automovil;
 import mx.avidos.mrmecanicoch.Entidad.Cita;
 import mx.avidos.mrmecanicoch.Entidad.Paquete;
@@ -88,6 +90,19 @@ public class AdapterCitas extends RecyclerView.Adapter<AdapterCitas.Recycler> im
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
+            }
+        });
+
+        recycler.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(recycler.context, CitaDetail.class);
+                intent.putExtra("UidCita", cita.getUidCita());
+                intent.putExtra("UidPaquete", cita.getUidPaquete());
+                intent.putExtra("UidTaller", cita.getTalleruid());
+                intent.putExtra("FechaHora", cita.getFecha());
+                intent.putExtra("UidAutomovil", cita.getAutomovil());
+                recycler.context.startActivity(intent);
             }
         });
 

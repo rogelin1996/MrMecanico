@@ -42,7 +42,7 @@ public class FragmentCitas extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_citas, container, false);
         initialize(view);
-        showCars();
+        showCitas();
         return view;
     }
 
@@ -55,7 +55,7 @@ public class FragmentCitas extends BaseFragment {
         tvSinCitas = view.findViewById(R.id.tvSinCitas);
     }
 
-    private void showCars (){
+    private void showCitas (){
         mDatabaseReference.child("paquetesVendidos").child(getUid()).orderByChild("fecha").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -63,6 +63,7 @@ public class FragmentCitas extends BaseFragment {
                     listaAutomovil.removeAll(listaAutomovil);
                     for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                         Cita cita = snapshot.getValue(Cita.class);
+                        cita.setUidCita(snapshot.getKey());
                         listaAutomovil.add(cita);
                     }
                     adapterAutomoviles.notifyDataSetChanged();
